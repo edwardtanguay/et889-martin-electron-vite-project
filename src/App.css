@@ -1,7 +1,15 @@
-#root {
+:root {
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+  color-scheme: light dark;
+  max-width: 1920px;
+  
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 62.5%;
-  /* max-width: 1280px; */
-  max-width: 1440px;
+}
+
+#root{
+  height: 100vh;
 }
 
 *{
@@ -12,64 +20,15 @@
 
 body{
   font-size: 1.6rem;
-  border: solid;
 }
 
 main{
-  width: 100%;
+  width: 90%;
   margin: auto;
-  border: solid red;
 }
 
 section{
-  width: 80%;
-  border: solid yellow;
-
-}
-
-nav{
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-around;
-}
-
-nav ul li{
-  list-style: none;
-}
-
-nav button{
-  background-color: aliceblue;
-}
-
-.switchContainer{
-  background-color: violet;
-  width: 6rem;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  padding: 0 1rem;
-  border: solid;
-  border-radius: 1rem;
-
-  .switch{
-    background-color: red;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 1rem;
-  }
-
-  #toggleSwitch{
-    display: none;
-  }
-
-  #toggleSwitch:checked + .switch{
-    background-color: blue;
-    transform: translate(1.5rem);
-  }
+  width: 100%;
+  padding: 2rem 0.5rem
 }
 

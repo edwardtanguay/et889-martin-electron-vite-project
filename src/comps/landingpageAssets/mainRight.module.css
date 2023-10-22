@@ -1,0 +1,67 @@
+.loginContainer{
+    height: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+}
+
+.loginForm, .registerForm {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 0.1rem #ccc;
+    border-radius: 3rem;
+    box-shadow:
+    0.4rem 0.4rem 0.9rem #ccc9,
+    -0.1rem -0.2rem 0.2rem #ccc9,
+    -0.2rem 0.4rem 0.2rem #ccc9,
+    0.4rem -0.2rem 0.2rem #ccc9;
+}
+
+.loginForm{
+    max-width: 50rem;
+    height: 30rem;
+}
+
+.loginLabel, .loginInput, .loginBtn{
+    font-size: 2.2rem;
+    font-weight: 600;
+    border-radius: 1.2rem;
+}
+
+.loginLabel{
+    display: block;
+    margin-top: 2rem;
+}
+
+.loginInput{
+    width: 70%;
+    text-align: center;
+    padding: 0.8rem 2.5rem;
+    border-radius: 2.5rem;
+}
+
+.btnContainer{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.loginBtn{
+    background-color: transparent;
+    color: #ededed99;
+    width: 45%;
+    padding: 0.5rem 1rem;
+    margin-top: 3.5rem;
+    border: solid 0.5rem #e5661299
+}
+
+.loginBtn:hover{
+    border: solid 0.5rem #e56612;
+    color: #ededed;
+}
