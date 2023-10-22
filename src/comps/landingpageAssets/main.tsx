@@ -21,7 +21,6 @@ export const LPMain = () => {
                 )
                 : (
                     <>
-                    <Register registered={registered} setRegister={setRegistered} />
                     </>
                 )
             }

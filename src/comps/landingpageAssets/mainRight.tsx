@@ -1,6 +1,11 @@
 import styles from './mainRight.module.css'
 
-export const LPMainRight = ({register = false, setRegister}) => {
+interface IProps {
+    registered: boolean,
+    setRegistered: (registered: boolean) => void
+}
+
+export const LPMainRight = ({registered = false, setRegistered}: IProps) => {
     return(
         <section className={styles.loginContainer}>
             <form className={styles.loginForm}>
@@ -10,7 +15,7 @@ export const LPMainRight = ({register = false, setRegister}) => {
                 <input type="password" id="password" className={styles.loginInput}/>
                 <div className={styles.btnContainer}>
                     <button className={styles.loginBtn}>Login</button>
-                    <button className={styles.loginBtn} onClick={() => setRegister(!register)}>Signup</button>
+                    <button className={styles.loginBtn} onClick={() => setRegistered(!registered)}>Signup</button>
                 </div>
             </form>
         </section>
